@@ -41,6 +41,8 @@
 
 <img src="https://github.com/JohnnyMatheus/Trabalho-Inteligencia-Artificial-Sistema-de-Recomendacao-de-filmes/blob/main/imagens/Formula%20utilizada.png"/>
 
+<img src="https://github.com/JohnnyMatheus/Trabalho-Inteligencia-Artificial-Sistema-de-Recomendacao-de-filmes/blob/main/imagens/exemplo%20pratico.png"/>
+
 ## Pré-processamento
 🔻Antes de recomendar, os dados passam por algumas etapas:
 - Limpeza de votos → transforma valores com "K" em números inteiros.
