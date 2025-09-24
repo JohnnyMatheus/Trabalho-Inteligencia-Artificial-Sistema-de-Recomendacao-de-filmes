@@ -67,6 +67,6 @@ Isso evita que o sistema quebre durante a execução, garantindo uma apresentaç
 
 ## 🔷 Professor
 
-| [<img src="https://avatars.githubusercontent.com/u/7074409?v=4" width=115><br><sub>Roberson Alves</sub>](https://github.com/ViniciusAS) |
+| [<img src="https://avatars.githubusercontent.com/u/7074409?v=4" width=115><br><sub>Vinicius Almeida dos Santos</sub>](https://github.com/ViniciusAS) |
 | :---: |
 
