@@ -40,7 +40,7 @@
 - Com Min-Max, todos ficam comparáveis dentro de [0,1].
 
 <img src="https://github.com/JohnnyMatheus/Trabalho-Inteligencia-Artificial-Sistema-de-Recomendacao-de-filmes/blob/main/imagens/Formula%20utilizada.png"/>
-
+<hr/>
 <img src="https://github.com/JohnnyMatheus/Trabalho-Inteligencia-Artificial-Sistema-de-Recomendacao-de-filmes/blob/main/imagens/exemplo%20pratico.png"/>
 
 ## Pré-processamento
