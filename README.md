@@ -39,6 +39,8 @@
 - Sem normalização, atributos com valores muito grandes (como votos) iriam dominar o cálculo da similaridade.
 - Com Min-Max, todos ficam comparáveis dentro de [0,1].
 
+<img src="https://github.com/JohnnyMatheus/Trabalho-Inteligencia-Artificial-Sistema-de-Recomendacao-de-filmes/blob/main/imagens/Formula%20utilizada.png"/>
+
 ## Pré-processamento
 🔻Antes de recomendar, os dados passam por algumas etapas:
 - Limpeza de votos → transforma valores com "K" em números inteiros.
