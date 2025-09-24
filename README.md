@@ -11,23 +11,23 @@
 <p>O sistema foi implementado utilizando Python, Pandas, Numpy, Scikit-learn, Streamlit e ferramentas de visualização interativa, proporcionando uma experiência prática e didática na aplicação de técnicas de inteligência artificial em dados reais, no contexto do curso de Ciência da Computação.</p>
 
 ## Objetivo do Projeto
---O projeto é um Sistema de Recomendação de Filmes baseado em Raciocínio Baseado em Casos (RBC).
--- RBC funciona como o raciocínio humano: você compara um novo caso (filme que o usuário gosta) com casos anteriores (outros filmes da base) e recomenda os mais similares.
--- O objetivo é ajudar o usuário a descobrir filmes parecidos com os que ele já gosta, usando informações numéricas e características dos filmes.
+- O projeto é um Sistema de Recomendação de Filmes baseado em Raciocínio Baseado em Casos (RBC).
+- RBC funciona como o raciocínio humano: você compara um novo caso (filme que o usuário gosta) com casos anteriores (outros filmes da base) e recomenda os mais similares.
+- O objetivo é ajudar o usuário a descobrir filmes parecidos com os que ele já gosta, usando informações numéricas e características dos filmes.
 
-## Base de Dados
+## 🎲Base de Dados
 
-O sistema usa um arquivo CSV com informações dos filmes, como:
-Title → Nome do filme
-IMDb Rating → Nota no IMDb
-Meta Score → Nota da crítica
-Votes → Número de votos do público
-Year → Ano de lançamento
-Genre → Gênero(s) do filme
+- O sistema usa um arquivo CSV com informações dos filmes, como:
+= Title → Nome do filme
+= IMDb Rating → Nota no IMDb
+= Meta Score → Nota da crítica
+= Votes → Número de votos do público
+= Year → Ano de lançamento
+= Genre → Gênero(s) do filme
 
 ## Pré-processamento
-Antes de recomendar, os dados passam por algumas etapas:
-Limpeza de votos → transforma valores com "K" em números inteiros.
+🔻Antes de recomendar, os dados passam por algumas etapas:
+-Limpeza de votos → transforma valores com "K" em números inteiros.
 Extração do ano → pega o ano do título do filme.
 Seleção de features numéricas → IMDb Rating, Meta Score, votos e ano.
 Normalização → usa MinMaxScaler para colocar todas as características na mesma escala (0 a 1), o que é importante para calcular similaridade corretamente.
