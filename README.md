@@ -28,7 +28,7 @@
 ## 🔺Normalização usada no projeto
 - Foi utilizada a normalização Min-Max (também chamada de escala 0–1), implementada pelo MinMaxScaler da biblioteca Scikit-learn.
 
-##🔹 O que a normalização faz?
+## 🔹 O que a normalização faz?
 - A ideia é ajustar os valores de cada feature (atributo numérico) para que todos fiquem no mesmo intervalo, entre 0 e 1.
 
 ## Exemplo:
