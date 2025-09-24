@@ -23,7 +23,21 @@
 - Meta Score → Nota da crítica
 - Votes → Número de votos do público
 - Year → Ano de lançamento
-= Genre → Gênero(s) do filme
+- Genre → Gênero(s) do filme
+
+## 🔺Normalização usada no projeto
+- Foi utilizada a normalização Min-Max (também chamada de escala 0–1), implementada pelo MinMaxScaler da biblioteca Scikit-learn.
+
+##🔹 O que a normalização faz?
+- A ideia é ajustar os valores de cada feature (atributo numérico) para que todos fiquem no mesmo intervalo, entre 0 e 1.
+
+## Exemplo:
+- IMDb Rating → varia de 1 a 10
+- Meta Score → varia de 0 a 100
+- Votes → pode variar de centenas até milhões
+- Ano de lançamento → varia de 1920 até 2020
+- Sem normalização, atributos com valores muito grandes (como votos) iriam dominar o cálculo da similaridade.
+- Com Min-Max, todos ficam comparáveis dentro de [0,1].
 
 ## Pré-processamento
 🔻Antes de recomendar, os dados passam por algumas etapas:
