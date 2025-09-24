@@ -11,9 +11,9 @@
 <p>O sistema foi implementado utilizando Python, Pandas, Numpy, Scikit-learn, Streamlit e ferramentas de visualização interativa, proporcionando uma experiência prática e didática na aplicação de técnicas de inteligência artificial em dados reais, no contexto do curso de Ciência da Computação.</p>
 
 ## Objetivo do Projeto
-O projeto é um Sistema de Recomendação de Filmes baseado em Raciocínio Baseado em Casos (RBC).
-RBC funciona como o raciocínio humano: você compara um novo caso (filme que o usuário gosta) com casos anteriores (outros filmes da base) e recomenda os mais similares.
-O objetivo é ajudar o usuário a descobrir filmes parecidos com os que ele já gosta, usando informações numéricas e características dos filmes.
+-- O projeto é um Sistema de Recomendação de Filmes baseado em Raciocínio Baseado em Casos (RBC).
+-- RBC funciona como o raciocínio humano: você compara um novo caso (filme que o usuário gosta) com casos anteriores (outros filmes da base) e recomenda os mais similares.
+-- O objetivo é ajudar o usuário a descobrir filmes parecidos com os que ele já gosta, usando informações numéricas e características dos filmes.
 
 ## Base de Dados
 
