@@ -6,3 +6,14 @@
 
 
  pip install pandas numpy scikit-learn streamlit
+
+
+streamlit run app.py para executar o projeto
+
+Estrutura do projeto
+recomendacao_filmes/
+│── venv/                 # ambiente virtual
+│── data/                 # colocar a base de filmes aqui
+│    └── imdb-top-rated-movies-user-rated.csv
+│── app.py                # código principal
+│── requirements.txt
