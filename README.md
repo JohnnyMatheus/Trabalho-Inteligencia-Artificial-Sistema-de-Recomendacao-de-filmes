@@ -18,46 +18,46 @@
 ## 🎲Base de Dados
 
 - O sistema usa um arquivo CSV com informações dos filmes, como:
-= Title → Nome do filme
-= IMDb Rating → Nota no IMDb
-= Meta Score → Nota da crítica
-= Votes → Número de votos do público
-= Year → Ano de lançamento
+- Title → Nome do filme
+- IMDb Rating → Nota no IMDb
+- Meta Score → Nota da crítica
+- Votes → Número de votos do público
+- Year → Ano de lançamento
 = Genre → Gênero(s) do filme
 
 ## Pré-processamento
 🔻Antes de recomendar, os dados passam por algumas etapas:
--Limpeza de votos → transforma valores com "K" em números inteiros.
-Extração do ano → pega o ano do título do filme.
-Seleção de features numéricas → IMDb Rating, Meta Score, votos e ano.
-Normalização → usa MinMaxScaler para colocar todas as características na mesma escala (0 a 1), o que é importante para calcular similaridade corretamente.
+- Limpeza de votos → transforma valores com "K" em números inteiros.
+- Extração do ano → pega o ano do título do filme.
+- Seleção de features numéricas → IMDb Rating, Meta Score, votos e ano.
+- Normalização → usa MinMaxScaler para colocar todas as características na mesma escala (0 a 1), o que é importante para calcular similaridade corretamente.
 
 ## Algoritmo de Recomendação
-O coração do projeto é a função de recomendação:
-O usuário seleciona um filme na interface.
-O sistema encontra o filme na base de dados (busca parcial e case insensitive).
-Calcula a similaridade de cosseno entre o filme escolhido e todos os outros da base.
-Similaridade de cosseno: mede o quão parecidos dois filmes são considerando seus valores numéricos (rating, votos, ano…).
-Retorna os top K filmes mais similares, ignorando o próprio filme selecionado.
-Exibe para o usuário:
-Filme base (o que ele selecionou)
-Filmes recomendados, com nota e gênero
-Resumindo: ele pega “um filme que você gosta” e acha os mais parecidos na base usando matemática de vetores.
+- O coração do projeto é a função de recomendação:
+- O usuário seleciona um filme na interface.
+- O sistema encontra o filme na base de dados (busca parcial e case insensitive).
+- Calcula a similaridade de cosseno entre o filme escolhido e todos os outros da base.
+- Similaridade de cosseno: mede o quão parecidos dois filmes são considerando seus valores numéricos (rating, votos, ano…).
+- Retorna os top K filmes mais similares, ignorando o próprio filme selecionado.
+- Exibe para o usuário:
+- Filme base (o que ele selecionou)
+- Filmes recomendados, com nota e gênero
+- Resumindo: ele pega “um filme que você gosta” e acha os mais parecidos na base usando matemática de vetores.
 
 ## Interface do Streamlit
-O projeto usa Streamlit para criar uma interface interativa:
-Selectbox → permite escolher um filme.
-Slider → define quantas recomendações mostrar.
-Checkboxes → mostrar dados brutos ou debug.
-Sidebar → mostra estatísticas da base e permite explorar filmes por gênero.
-Tudo isso é feito de forma visual e dinâmica, sem precisar mexer no código.
+- O projeto usa Streamlit para criar uma interface interativa:
+- Selectbox → permite escolher um filme.
+- Slider → define quantas recomendações mostrar.
+- Checkboxes → mostrar dados brutos ou debug.
+- Sidebar → mostra estatísticas da base e permite explorar filmes por gênero.
+- Tudo isso é feito de forma visual e dinâmica, sem precisar mexer no código.
 
 ## Tratamento de Erros
-O sistema é robusto, por isso:
-Se o CSV não existir → mostra mensagem de erro.
-Se uma coluna faltar → usa apenas as colunas disponíveis.
-Se o filme não for encontrado → avisa o usuário.
-Isso evita que o sistema quebre durante a execução, garantindo uma apresentação segura.
+- O sistema é robusto, por isso:
+- Se o CSV não existir → mostra mensagem de erro.
+- Se uma coluna faltar → usa apenas as colunas disponíveis.
+- Se o filme não for encontrado → avisa o usuário.
+- Isso evita que o sistema quebre durante a execução, garantindo uma apresentação segura.
 
 ## 🧠 Desenvolvedores
 
