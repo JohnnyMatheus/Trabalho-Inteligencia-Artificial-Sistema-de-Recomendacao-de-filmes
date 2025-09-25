@@ -16,14 +16,17 @@
 - O objetivo é ajudar o usuário a descobrir filmes parecidos com os que ele já gosta, usando informações numéricas e características dos filmes.
 
 ## 🎲Base de Dados
-
-- O sistema usa um arquivo CSV com informações dos filmes, como:
-- Title → Nome do filme
-- IMDb Rating → Nota no IMDb
-- Meta Score → Nota da crítica
-- Votes → Número de votos do público
-- Year → Ano de lançamento
-- Genre → Gênero(s) do filme
+A base utilizada contém:
+- Title: Nome do filme
+- IMDb Rating: Nota do público
+- Meta Score: Nota da crítica
+- Votes: Número de votos
+- Year: Ano de lançamento
+- Genre: Gêneros do filme
+- Tags: Palavras-chave/temas
+- Director: Diretor
+- Stars: Elenco principal
+- Poster URL: Imagem do filme
 
 ## 🔺Normalização usada no projeto
 - Foi utilizada a normalização Min-Max (também chamada de escala 0–1), implementada pelo MinMaxScaler da biblioteca Scikit-learn.
