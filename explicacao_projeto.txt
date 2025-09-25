@@ -1,0 +1,53 @@
+Sistema de Recomendação de Filmes com Raciocínio Baseado em Casos (RBC)
+====================================================
+
+Resumo do Projeto
+-----------------
+Este projeto implementa um sistema de recomendação de filmes baseado em Raciocínio Baseado em Casos (RBC), utilizando Python, Pandas, Numpy, Scikit-learn e Streamlit. O objetivo é recomendar filmes realmente similares ao gosto do usuário, aplicando técnicas de inteligência artificial estudadas no curso de Ciência da Computação da UNOESC.
+
+Como Funciona o Sistema
+-----------------------
+1. **Base de Dados**
+   - Utiliza um arquivo CSV com informações detalhadas dos filmes: título, nota IMDb, meta score, número de votos, ano de lançamento, gêneros, tags, diretor, elenco e URL do pôster.
+
+2. **Pré-processamento**
+   - Limpa e converte o campo de votos (ex: "927K" para 927000).
+   - Usa o campo correto de ano (coluna Year) para garantir precisão.
+   - Normaliza todos os atributos numéricos para o intervalo [0,1] usando MinMaxScaler.
+   - Faz one-hot encoding para gêneros, diretores e atores, criando colunas binárias para cada valor único.
+   - Trata campos ausentes para garantir robustez.
+
+3. **Algoritmo de Recomendação**
+   - O usuário escolhe um filme na interface.
+   - O sistema busca o filme na base (busca parcial, sem diferenciar maiúsculas/minúsculas).
+   - Calcula a similaridade de cosseno entre o filme base e todos os outros, considerando:
+     - IMDb Rating
+     - Meta Score
+     - Votos
+     - Ano de lançamento
+     - Gêneros (normalizados)
+     - Tags (se houver)
+     - Diretor (se igual, aumenta similaridade)
+     - Elenco (atores em comum aumentam similaridade)
+   - Retorna os filmes mais similares, detalhando todos os pontos em comum (gênero, tags, diretor, atores, etc).
+   - Se não houver nenhum ponto forte em comum, recomenda por alta similaridade geral.
+
+4. **Interface Gráfica (Streamlit)**
+   - Interface visual e interativa, fácil de usar.
+   - Cards de recomendação mostram imagem, nome, ano, nota, gêneros, diretor, elenco, similaridade e explicação detalhada.
+   - Sidebar mostra estatísticas da base, filtro por gênero, top filmes por categoria e explicação dos campos usados.
+   - Explicação clara: mostra exatamente quais campos foram usados e o que cada recomendação tem em comum com o filme base.
+
+5. **Tratamento de Erros e Robustez**
+   - Mensagens amigáveis se o CSV não existir, se faltar coluna ou se o filme não for encontrado.
+   - O sistema nunca quebra, sempre informa o usuário e sugere alternativas.
+
+6. **Destaques Técnicos**
+   - Normalização Min-Max para garantir que todos os atributos tenham peso justo na similaridade.
+   - One-hot encoding para gêneros, diretores e elenco.
+   - Explicação detalhada de cada recomendação, mostrando todos os pontos em comum e diferenças relevantes.
+   - Visual moderno e responsivo, pronto para apresentação.
+
+Resumo Final
+------------
+O sistema vai além do básico, usando múltiplos campos (nota, votos, ano, gêneros, tags, diretor, elenco) para garantir recomendações realmente relevantes e explicáveis, com interface visual moderna e robusta para apresentação.
